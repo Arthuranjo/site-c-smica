@@ -210,6 +210,14 @@ nav {
     justify-content: center;
 }
 
+.texto-produto h1{
+    text-align: center;
+}
+
+.texto-produto p{
+    margin-bottom: 100px;
+}
+
 .nossos-produtos h1 {
     text-align: left;
     margin: 0;
