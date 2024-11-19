@@ -151,7 +151,7 @@ body {
 
 .texto-mochila h1 {
     margin-bottom: 10px;
-    text-align: center;
+    
 }
 
 .texto-mochila p {
@@ -217,7 +217,7 @@ body {
 }
 
 .texto-calca {
-    text-align: justify;
+    text-align: center;
     flex: 2;
 }
 
@@ -297,7 +297,7 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    width: 100px;
+    width: 200px;
     margin-bottom: 100px;
 }
 
