@@ -103,6 +103,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .imagem1,
@@ -111,20 +112,16 @@ p {
     margin: 10px;
 }
 
-.imagens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .img {
-    width: 400px;
+    width: 100%;
+    max-width: 550px;
     height: auto;
 }
 
 .item {
     display: flex; 
     align-items: center;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -217,18 +214,42 @@ footer a:hover {
     }
     
     .inicio li{
-        margin: 0;
+        margin: 0; 
     }
 
     .inicio{
-        flex-direction: column;
+    gap: 25px;
+    display: flex;
+    padding: 0;
+    margin: 0.1rem 0 0;
+    margin-top: 40px;
+        
     }
 
-    .item{
-        flex-direction: column;
+    .item {
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+
+    .imagem1, .imagem2, .imagem3 {
+        width: 70%; 
+    }
+
+    .sinais p {
+        font-size: 36px; 
     }
 
     .texto{
         width: 80%;
     }
+
+    .borda-final{
+        width: 100%;
+    }
 }
+
+
+
+ 
+
