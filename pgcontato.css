@@ -68,33 +68,63 @@ nav {
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 10%;
-    flex: 1;
-    min-width: 80%;
-    max-width: 30%;
-    gap: 20px;
-    border: none;
-    border-bottom: 2px solid black;
-    background: transparent;
-    color: black;
-    font-size: 16px;
-}
-
-.enviar {
+    background: #e3e6dd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Estilo para os labels */
+  .formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo para os campos de entrada */
+  .formulario input,
+  .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Placeholder estilizado */
+  .formulario input::placeholder,
+  .formulario textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Botão de envio */
+  .formulario button {
+    width: 100%;
+    padding: 10px;
     background-color: #61806b;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.botao {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-}
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito de hover no botão */
+  .formulario button:hover {
+    background-color: #0e2c17;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 400px) {
+    .formulario {
+      width: 100%;
+      padding: 15px;
+    }
+  }
 
 .texto {
     font-family: Arial, sans-serif;

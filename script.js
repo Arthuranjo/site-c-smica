@@ -4,35 +4,35 @@ function mostrarDetalhes(produtoId) {
     const produtos = {
         1: {
             img: "./fotos-cosmica/1.png",
-            titulo: "BOLSA TRANSVERSAL AFETO",
+            titulo: "MOCHILA MUDITA",
             descricao: "Ao escolher nossas criações, você não está apenas, adquirindo moda, você está fazendo parte de um movimento que valoriza o meio ambiente e transforma desperdício em beleza.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Couro", "Camursa", "Feito com roupas"]
         },
         2: {
             img: "./fotos-cosmica/2.png",
-            titulo: "BOLSA AFETO 2",
+            titulo: "MOCHILA UPEKSHA",
             descricao: "Ao escolher nossas criações, você não está apenas, adquirindo moda, você está fazendo parte de um movimento que valoriza o meio ambiente e transforma desperdício em beleza.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["tecido", "Preto", "Bicolor"]
         },
         3: {
             img: "./fotos-cosmica/3.png",
-            titulo: "BOLSA AFETO 3",
+            titulo: "BASIC BAG",
             descricao: "Ao escolher nossas criações, você não está apenas, adquirindo moda, você está fazendo parte de um movimento que valoriza o meio ambiente e transforma desperdício em beleza.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Alguma coisa", "alguma coisa", "Outra coisa"]
         },
         4: {
             img: "./fotos-cosmica/4.png",
-            titulo: "BOLSA AFETO 4",
+            titulo: "BOLSA TRANSVERSAL",
             descricao: "Ao escolher nossas criações, você não está apenas, adquirindo moda, você está fazendo parte de um movimento que valoriza o meio ambiente e transforma desperdício em beleza.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["coisa um", "Coisa dois", "Coisa tres"]
         },
         5: {
             img: "./fotos-cosmica/5.png",
-            titulo: "BOLSA AFETO 5",
+            titulo: "BASIC BAG PRETA",
             descricao: "Ao escolher nossas criações, você não está apenas, adquirindo moda, você está fazendo parte de um movimento que valoriza o meio ambiente e transforma desperdício em beleza.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Detalhes 1", "Detalhes 2", "Detalhes 3"]
@@ -76,11 +76,4 @@ function mostrarMenosDetalhes() {
 function mudarImagem(imagem) {
     document.getElementById("produto-principal-img").src = imagem;
 }
-
-
-
-
-
-
-
 

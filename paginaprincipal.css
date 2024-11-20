@@ -394,7 +394,7 @@ body {
 
 .imagens-nosso-trabalho {
     display: flex;
-/*     width: 20%;*/
+    flex-wrap: wrap;
 }
 
 .imagem-trabalho1,
