@@ -21,23 +21,53 @@ body {
     width: 10%;
 }
 
+.mini-borda-1 {
+    text-align: center;
+    background-color: #61806b;
+    color: rgb(255, 255, 255);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.mini-borda-1 li {
+    margin-top: 10px;
+}
+
 .inicio {
     display: flex;
     list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
     padding: 0;
     margin: 0.1rem 0 0;
-    margin-top: 40px;
 }
 
 .inicio li {
-    margin-right: 90px;
+    padding: 0 20px;
+}
+
+.inicio li img {
+    width: 100px;
 }
 
 .inicio li a {
     color: white;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
+.inicio li a:hover {
+    background-color: #4c6e59;
+}
 .cabeçalho {
     background: #f4f4f4;
     padding: 2.7rem;
