@@ -6,35 +6,35 @@ function mostrarDetalhes(produtoId) {
         1: {
             img: "./fotos-cosmica/mochilamudita.jpeg",
             titulo: "MOCHILA MUDITA",
-            descricao: "Ao escolher nossas criações, você está valorizando o meio ambiente e transformando desperdício em beleza.",
+            descricao: "Mochila ideal para quem tem um dia-a-dia. bolsos internos",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
-            detalhes: ["Couro", "Camurça", "Feito com roupas recicladas", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4" ]
+            detalhes: ["Couro", "Camurça", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4", "Feito com roupas recicladas" ]
         },
         2: {
             img: "./fotos-cosmica/mochilaupeksha.jpeg",
             titulo: "MOCHILA UPEKSHA",
-            descricao: "Ao escolher nossas criações, você está valorizando o meio ambiente e transformando desperdício em beleza.",
+            descricao: "Mochila, possui diversos bolsos externos,<br>bolso interno para notebook até 15,6",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Tecido resistente", "Cor preta", "Design bicolor", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         },
         3: {
             img: "./fotos-cosmica/basicbag.jpeg",
             titulo: "BASIC BAG",
-            descricao: "Ao escolher nossas criações, você está valorizando o meio ambiente e transformando desperdício em beleza.",
+            descricao: "Leve e discreta seu tamanho parece pequeno,<br>mas ela é uma bolsa muito espaçosa.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Compacta", "Leve", "Espaçosa", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         },
         4: {
             img: "./fotos-cosmica/18.png",
             titulo: "BOLSA TRANSVERSAL",
-            descricao: "Ao escolher nossas criações, você está valorizando o meio ambiente e transformando desperdício em beleza.",
+            descricao: "Bolsa transversal espaçosa e funcional, pensada para te acompanhar em muitas ocasiões",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Transversal", "Funcional", "Acompanha diversas ocasiões", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         },
         5: {
             img: "./fotos-cosmica/basicbagpreta.jpeg",
             titulo: "BASIC BAG PRETA",
-            descricao: "Ao escolher nossas criações, você está valorizando o meio ambiente e transformando desperdício em beleza.",
+            descricao: "Leve e discreta seu tamanho parece pequeno, mas ela é uma bolsa muito espaçosa.",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Estilo clássico", "Cor preta", "Alta durabilidade", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         }
