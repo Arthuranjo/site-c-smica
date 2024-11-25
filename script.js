@@ -6,21 +6,21 @@ function mostrarDetalhes(produtoId) {
         1: {
             img: "./fotos-cosmica/mochilamudita.jpeg",
             titulo: "MOCHILA MUDITA",
-            descricao: "Mochila ideal para quem tem um dia-a-dia. bolsos internos",
+            descricao: "Mochila ideal para quem necessita de um uso constante no dia-a-dia, possui bolsos internos",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Couro", "Camurça", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4", "Feito com roupas recicladas" ]
         },
         2: {
             img: "./fotos-cosmica/mochilaupeksha.jpeg",
             titulo: "MOCHILA UPEKSHA",
-            descricao: "Mochila, possui diversos bolsos externos,<br>bolso interno para notebook até 15,6",
+            descricao: "Mochila que possui diversos bolsos externos, com bolso interno para notebook até 15,6",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Tecido resistente", "Cor preta", "Design bicolor", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         },
         3: {
             img: "./fotos-cosmica/basicbag.jpeg",
             titulo: "BASIC BAG",
-            descricao: "Leve e discreta seu tamanho parece pequeno,<br>mas ela é uma bolsa muito espaçosa.",
+            descricao: "Leve e discreta seu tamanho parece pequeno, mas ela é uma bolsa muito espaçosa",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Compacta", "Leve", "Espaçosa", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         },
@@ -29,12 +29,12 @@ function mostrarDetalhes(produtoId) {
             titulo: "BOLSA TRANSVERSAL",
             descricao: "Bolsa transversal espaçosa e funcional, pensada para te acompanhar em muitas ocasiões",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
-            detalhes: ["Transversal", "Funcional", "Acompanha diversas ocasiões", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
+            detalhes: ["Transversal", "Funcional", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4", "Acompanha diversas ocasiões"]
         },
         5: {
             img: "./fotos-cosmica/basicbagpreta.jpeg",
             titulo: "BASIC BAG PRETA",
-            descricao: "Leve e discreta seu tamanho parece pequeno, mas ela é uma bolsa muito espaçosa.",
+            descricao: "Leve e discreta, apesae de seu tamanho parecer pequeno, ela é uma bolsa muito espaçosa",
             subtitulo: "INFORMAÇÕES ADICIONAIS:",
             detalhes: ["Estilo clássico", "Cor preta", "Alta durabilidade", " Detalhes 1", " Detalhes 2", " Detalhes 3", " Detalhes 4"]
         }
