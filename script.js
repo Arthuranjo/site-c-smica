@@ -119,41 +119,74 @@ function mudarImagem(imagem) {
 
 //CARROSEL
 
+document.addEventListener("DOMContentLoaded", function () {
+    const carrossel = document.querySelector(".carrossel");
+    const itens = document.querySelectorAll(".item");
+    const btnAntes = document.querySelector(".antes");
+    const btnProximo = document.querySelector(".proximo");
 
-    const carrosselItems = document.querySelectorAll('.carrossel .item');
-    const prevButton = document.querySelector('.antes');
-    const nextButton = document.querySelector('.proximo');
+    let posicaoAtual = 0;
+    const totalItens = itens.length;
+    const visiveis = 3; // Quantidade de itens visíveis no carrossel
+    const larguraItem = 100 / visiveis; // Porcentagem para cada item visível
 
-    let currentIndex = 0;
+    // Configurar largura dos itens no carrossel
+    itens.forEach(item => {
+        item.style.minWidth = `${larguraItem}%`;
+    });
 
-    function updateCarousel() {
-        carrosselItems.forEach((item, index) => {
-            item.classList.remove('active', 'left', 'right');
-
-            if (index === currentIndex) {
-                item.classList.add('active');
-            } else if (index === (currentIndex - 1 + carrosselItems.length) % carrosselItems.length) {
-                item.classList.add('left');
-            } else if (index === (currentIndex + 1) % carrosselItems.length) {
-                item.classList.add('right');
+    // Função para mover o carrossel
+    function moverCarrossel(direcao) {
+        if (direcao === "proximo") {
+            posicaoAtual++;
+            if (posicaoAtual > totalItens - visiveis) {
+                posicaoAtual = 0; // Volta para o início
             }
-        });
+        } else if (direcao === "antes") {
+            posicaoAtual--;
+            if (posicaoAtual < 0) {
+                posicaoAtual = totalItens - visiveis; // Vai para o final
+            }
+        }
+        atualizarCarrossel();
     }
 
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + carrosselItems.length) % carrosselItems.length;
-        updateCarousel();
-    });
+    // Atualiza a posição do carrossel com transição suave
+    function atualizarCarrossel() {
+        const deslocamento = -(posicaoAtual * (100 / visiveis));
+        carrossel.style.transform = `translateX(${deslocamento}%)`;
+    }
 
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % carrosselItems.length;
-        updateCarousel();
-    });
-
-    // começa o carrosel
-    updateCarousel();
+    // Eventos dos botões de navegação
+    btnProximo.addEventListener("click", () => moverCarrossel("proximo"));
+    btnAntes.addEventListener("click", () => moverCarrossel("antes"));
+});
 
 
+
+
+
+
+
+// CARROSSEL PREÇOS
+
+const carrossel1 = document.querySelector('.carrossel');
+let index1 = 0;
+
+prev.addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : carrossel.children.length - 1;
+    updateCarrossel();
+});
+
+next.addEventListener('click', () => {
+    index = (index + 1) % carrossel.children.length;
+    updateCarrossel();
+});
+
+function updateCarrossel() {
+    const width = carrossel.children[0].offsetWidth;
+    carrossel.style.transform = `translateX(-${index * width}px)`;
+}
 
 
 
