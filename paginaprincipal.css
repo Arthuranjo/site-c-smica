@@ -150,6 +150,7 @@ body {
 }
 
 .texto-mochila h1 {
+    color: #4c6e59;
     margin-bottom: 10px;
     
 }
@@ -222,6 +223,7 @@ body {
 }
 
 .texto-calca h1 {
+    color: #4c6e59;
     margin-bottom: 10px;
 }
 
@@ -255,7 +257,7 @@ body {
     /* ta aplicando o movimento na imagem */
 }
 
-/* Estilos gerais */
+
 .produtos {
     width: 90%;
     margin: 0 auto;
@@ -265,9 +267,9 @@ body {
     background-color: #f4f4f9; /* Cor suave de fundo */
 }
 
-h1 {
+.produtos h1 {
     font-size: 2rem;
-    color: #333;
+    color: #4c6e59;
     margin-bottom: 30px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -480,6 +482,7 @@ h1 {
 
 .ultimo-titulo,
 .ultimo-subtitulo {
+    color: #4c6e59;
     margin: 0px;
     margin-left: 100px;
 }
@@ -491,10 +494,10 @@ h1 {
 
 .imagens-nosso-trabalho {
     display: flex;
-     flex-wrap: wrap; 
+    flex-direction: row; 
      gap: 10px; 
      padding: 20px;
-     width: 80%; 
+     width: 50%; 
      box-sizing: border-box;
 }
 

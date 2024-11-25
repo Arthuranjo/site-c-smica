@@ -202,6 +202,7 @@ nav {
 
 
 .titulo-sessao {
+    color: #4c6e59;
     text-align: center;
     margin-top: 200px;
     margin-bottom: 60px;
@@ -258,12 +259,14 @@ nav {
 }
 
 .texto-produto {
+    color: #4c6e59;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .texto-produto h1{
+    
     text-align: center;
 }
 
@@ -327,11 +330,13 @@ nav {
 }
 
 .informacao-produto h1 {
+    color: #4c6e59;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #produto-principal-titulo {
+    color: #4c6e59;
     font-size: 1.5em;
     margin-top: 50px;
 }
@@ -343,6 +348,7 @@ nav {
 }
 
 #produto-principal-subtitulo {
+    color: #4c6e59;
     font-size: 1.5em;
     margin-top: 40px;
     display: flex;
