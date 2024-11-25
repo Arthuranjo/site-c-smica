@@ -113,3 +113,48 @@ function mudarImagem(imagem) {
     document.getElementById("produto-principal-img").src = imagem;
 }
 
+
+
+
+
+//CARROSEL
+
+
+    const carrosselItems = document.querySelectorAll('.carrossel .item');
+    const prevButton = document.querySelector('.antes');
+    const nextButton = document.querySelector('.proximo');
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        carrosselItems.forEach((item, index) => {
+            item.classList.remove('active', 'left', 'right');
+
+            if (index === currentIndex) {
+                item.classList.add('active');
+            } else if (index === (currentIndex - 1 + carrosselItems.length) % carrosselItems.length) {
+                item.classList.add('left');
+            } else if (index === (currentIndex + 1) % carrosselItems.length) {
+                item.classList.add('right');
+            }
+        });
+    }
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + carrosselItems.length) % carrosselItems.length;
+        updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carrosselItems.length;
+        updateCarousel();
+    });
+
+    // começa o carrosel
+    updateCarousel();
+
+
+
+
+
+

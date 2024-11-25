@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.40em;
     animation: typing 3s steps(30, end) infinite, 
             blink-caret 0.5s step-end infinite;
     z-index: 100002;
@@ -255,51 +255,139 @@ body {
     /* ta aplicando o movimento na imagem */
 }
 
+
 .produtos {
     text-align: center;
+    background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+    padding: 50px 0 100px; 
+    font-family: 'Arial', sans-serif;
 }
 
-.produto1,
-.produto2,
-.produto3,
-.produto4,
-.produto5 {
-    display: inline-block;
-    /* aqui permite que os artigos fiquem lado a lado */
-    margin: 20px;
+.produtos h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.produto1 img,
-.produto2 img,
-.produto3 img,
-.produto4 img,
-.produto5 img {
-    max-width: 200px;
-    height: auto;
-    transition: transform 0.3s ease;
-    /* Suaviza a transição */
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
 }
 
-.produto1 img:hover,
-.produto2 img:hover,
-.produto3 img:hover,
-.produto4 img:hover,
-.produto5 img:hover {
-    transform: translateY(-40px);
-    /* Move a imagem para cima ao passar o mouse */
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+}
+
+
+.item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 120px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.item.active {
+    transform: scale(1.5);
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.item.left {
+    transform: scale(1.2) translateX(-50px);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.item.right {
+    transform: scale(1.2) translateX(50px);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+
+.antes,
+.proximo {
+    background-color: #61806b;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+}
+
+.antes:hover,
+.proximo:hover {
+    background-color: #61806b;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
 }
 
 .botao-produtos {
-    display: block;
-    margin: 20px auto;
     text-decoration: none;
     background-color: #61806b;
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    width: 200px;
-    margin-bottom: 100px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.botao-produtos:hover {
+    background-color: #4e6757;
+    transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+   
+}
+.botao-produtos:hover {
+    background-color: #4e6757;
+    transform: translateY(-5px);
+}
+
+
+
+
 
 .formulario-principal {
     background-image: url('imagens/calca_jeans.jpg');
@@ -553,4 +641,22 @@ footer a:hover {
         margin: 0;
     }
 
+
+    .produtos {
+        padding: 30px 0 60px;
+    }
+
+    .carrossel-container {
+        width: 95%;
+    }
+
+    .item {
+        width: 100px;
+        height: 150px;
+    }
+
+    .botao-produtos {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }
