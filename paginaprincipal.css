@@ -493,26 +493,36 @@ body {
 }
 
 .imagens-nosso-trabalho {
-    display: flex;
-    flex-direction: row; 
-     gap: 10px; 
-     padding: 20px;
-     width: 50%; 
-     box-sizing: border-box;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+    padding: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .imagem-trabalho1,
 .imagem-trabalho2,
 .imagem-trabalho3 {
-    margin: 0 5%;
-    max-width: 100%;
+    flex: 1 1 calc(33.33% - 10px); 
+    max-width: calc(33.33% - 10px); 
 }
 
 .imagem-trabalho1 img,
 .imagem-trabalho2 img,
 .imagem-trabalho3 img {
-    width: 300px;
-    height: auto;
+    width: 80%; 
+    height: auto; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+.imagem-trabalho1 img:hover, 
+.imagem-trabalho2 img:hover, 
+.imagem-trabalho3 img:hover {
+    transform: scale(1.05); 
+    cursor: pointer; 
 }
 
 ul.u {
