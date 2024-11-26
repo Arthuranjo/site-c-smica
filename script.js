@@ -48,7 +48,7 @@ function mostrarDetalhes(produtoId) {
     document.getElementById("produto-principal-descricao").innerText = produto.descricao;
     document.getElementById("produto-principal-subtitulo").innerText = produto.subtitulo;
 
-  
+
     detalhesAtuais = produto.detalhes;
     criarListaDetalhes();
     detalhesVisiveis = false; 
@@ -87,13 +87,13 @@ function alternarDetalhes() {
         const itens = listaDescricao.querySelectorAll("li");
         itens.forEach((item) => {
         
-          item.style.flexBasis = "calc(30% - 30px)"; 
-          item.style.textAlign = "center";
-          item.style.border = "1px solid #ddd";
-          item.style.padding = "10px";
-          item.style.boxSizing = "border-box";
+        item.style.flexBasis = "calc(30% - 30px)"; 
+        item.style.textAlign = "center";
+        item.style.border = "1px solid #ddd";
+        item.style.padding = "10px";
+        item.style.boxSizing = "border-box";
         });
-      }
+    }
         
     else {
         listaDescricao.style.display = "none"; 
@@ -107,15 +107,9 @@ function atualizarBotao() {
     botao.innerText = detalhesVisiveis ? "Ocultar Detalhes" : "Mostrar Detalhes";
 }
 
-
-
 function mudarImagem(imagem) {
     document.getElementById("produto-principal-img").src = imagem;
 }
-
-
-
-
 
 //CARROSEL
 
@@ -162,12 +156,6 @@ document.addEventListener("DOMContentLoaded", function () {
     btnAntes.addEventListener("click", () => moverCarrossel("antes"));
 });
 
-
-
-
-
-
-
 // CARROSSEL PREÇOS
 
 const carrossel1 = document.querySelector('.carrossel');
@@ -187,7 +175,3 @@ function updateCarrossel() {
     const width = carrossel.children[0].offsetWidth;
     carrossel.style.transform = `translateX(-${index * width}px)`;
 }
-
-
-
-
