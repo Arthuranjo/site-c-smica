@@ -8,45 +8,45 @@ export default function footer() {
                 <ul>
                     <li>
                         <p>Nav</p>
-                        <a href="index.html">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li>
-                        <a href="pgafeto.html">Afeto</a>
+                        <a href="#afeto">Afeto</a>
                     </li>
 
                     <li>
-                        <a href="pgimpacto.html">Impacto</a>
+                        <a href="#impacto">Impacto</a>
                     </li>
                 </ul>
 
                 <ul>
                     <li>
                         <p>Sobre nós</p>
-                        <a href="index.html">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li>
-                        <a href="produtos.html">Produtos</a>
+                        <a href="#produtos">Produtos</a>
                     </li>
 
                     <li>
-                        <a href="pgcontato.html">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
 
                 <ul>
                     <li>
                         <p>Suporte</p>
-                        <a href="index.html">Home</a>
+                        <a href="#home">Home</a>
                     </li>
 
                     <li>
-                        <a href="produtos.html">Produtos</a>
+                        <a href="#produtos">Produtos</a>
                     </li>
 
                     <li>
-                        <a href="index.html">Sobre nós</a>
+                        <a href="#home">Sobre nós</a>
                     </li>
                 </ul>
             </div>
