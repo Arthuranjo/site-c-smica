@@ -2,9 +2,9 @@ export default function footer() {
     const footer = document.createElement('footer')
     footer.innerHTML = `
         <section>
-        <div class="footer-content">
+        <article class="footer-content">
 
-            <div class="redes-sociais">
+            <article class="redes-sociais">
                 <ul>
                     <li>
                         <p>Nav</p>
@@ -49,23 +49,25 @@ export default function footer() {
                         <a href="#home">Sobre nós</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </section>
+            </article>
+        
+    
 
-    <section class="borda-final">
-        <div class="itens-final">
-            <ul>
-                <li><img class="logo-final" src="imagens/LOGO-BRANCO.png"></li>
-            </ul>
+    
+            <article class="itens-final">
+                <ul>
+                    <li><img class="logo-final" src="imagens/LOGO-BRANCO.png"></li>
+                </ul>
 
-            <ul>
-                <li class="insta"><a href="https://www.instagram.com/cosmicacria/" target="_blank"><img src="imagens/instagram.png"></a></li>
-                <li class="whats"><a href="https://api.whatsapp.com/send/?phone=5547997873644&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/whatsapp.png"></a></li>
-                <li class="tiktok"><a href="https://www.tiktok.com/@cosmicacria" target="_blank"><img src="imagens/tiktok.png"></a></li>
-            </ul>
-        </div>
-    </section>
+                <ul>
+                    <li class="insta"><a href="https://www.instagram.com/cosmicacria/" target="_blank"><img src="imagens/instagram.png"></a></li>
+                    <li class="whats"><a href="https://api.whatsapp.com/send/?phone=5547997873644&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/whatsapp.png"></a></li>
+                    <li class="tiktok"><a href="https://www.tiktok.com/@cosmicacria" target="_blank"><img src="imagens/tiktok.png"></a></li>
+                </ul>
+            </article>
+        </article>
+     
+        </section>
     `
     return footer
 }

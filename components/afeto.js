@@ -24,12 +24,12 @@ export default function afeto(){
         </section>
 
         <section class="secao1">
+
             <h1 class="titulo1">POR QUE UPCYCLING?</h1>
 
             <p class="texto">
                 A indústria têxtil é uma das maiores poluidoras do planeta, desperdiçando toneladas de materiais e recursos preciosos a cada ano. Na Cosmica Cria, vemos o potencial escondido em cada pedaço de tecido, cada material descartado. O upcycling é a mudança em nós: transformar o que seria lixo em algo novo e especial, sem comprometer a qualidade ou o meio ambiente. Assim, criamos moda com alma e responsabilidade.
             </p>
-
         </section>
 
         <section>

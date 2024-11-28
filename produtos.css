@@ -174,6 +174,13 @@ nav {
 }
 
 
+@media (max-width: 768px) {
+    .blocos-produtos {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: stretch; /* Ajusta o alinhamento dos itens */
+    }
+}
+
 .carrossel {
     display: flex;
     gap: 20px;
@@ -221,8 +228,12 @@ nav {
     line-height: 1.6;
 }
 
-
-
+@media (max-width: 480px) {
+    .tabela-produtos {
+        
+        padding: 15px; /* Reduz o padding para uma melhor visualização */
+    }
+}
 
 
 
@@ -416,7 +427,10 @@ nav {
 
 footer {
     background-color: #61806b;
-    padding: 20px;
+    padding: 20px 0;
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
 }
 
 footer p,
@@ -429,16 +443,13 @@ footer a {
     text-decoration: none;
     color: #f4f4f4;
     transition: background-color 0.3s ease, color 0.2s ease;
+    font-size: 20px;
 }
 
 footer a:hover {
     background-color: rgba(59, 59, 59, 0.7);
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-}
 
 .redes-sociais {
     display: flex;
@@ -449,22 +460,24 @@ footer a:hover {
     font-weight: bold;
 }
 
-.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
 
 .itens-final {
+    width: 100%; 
+    background-color: #738d7b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    
 }
 
 .itens-final ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
+    gap: 10px; 
 }
 
 .itens-final img {
@@ -472,16 +485,6 @@ footer a:hover {
     max-height: 30px;
     margin: 0 10px;
 }
-
-.logo-final {
-    width: 90%;
-}
-
-.insta,
-.whats {
-    display: inline-block;
-}
-
 .texto-titulo-produto{
     text-align: center;
     width: 80%;
@@ -507,7 +510,9 @@ footer a:hover {
         padding: 0;
     }
 
- 
+    .blocos-produtos{
+        flex-direction: column;
+    }
 
     .tabela-produtos img{
         width: 150px;
@@ -575,11 +580,13 @@ footer a:hover {
     }
 }
 
+
+
 @media (min-width: 1024px) {
     .tabela-produtos {
         flex: 0 0 30%; 
     }
-}
+
 
     
     .blocos-produtos, .precos-container {
@@ -627,3 +634,4 @@ footer a:hover {
        
     }
     
+}

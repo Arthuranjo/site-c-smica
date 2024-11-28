@@ -91,16 +91,15 @@ section h1 {
     margin-bottom: 50px;
 }
 
-p {
-    font-size: 20px;
-}
 
 .paragrafo1 {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .secao1 {
     background-image: url('imagens/calca_jeans.jpg');
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,21 +107,29 @@ p {
     height: 400px;
     margin: 0;
     padding: 0;
+    overflow: hidden; 
 }
 
+
+
 .titulo1 {
+    margin-bottom: 90px;
     color: #f4f4f4;
     display: flex;
     position: relative;
     top: 50px;
+    z-index: 1; 
 }
 
 .texto {
+    font-weight: bold;
     color: #f4f4f4;
-    text-align: justify;
+    text-align: center;
     margin-top: 15px;
     width: 60%;
+    z-index: 1; 
 }
+
 
 .paragrafo2 {
     text-align: center;
@@ -162,7 +169,10 @@ p {
 
 footer {
     background-color: #61806b;
-    padding: 20px;
+    padding: 20px 0;
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
 }
 
 footer p,
@@ -175,16 +185,13 @@ footer a {
     text-decoration: none;
     color: #f4f4f4;
     transition: background-color 0.3s ease, color 0.2s ease;
+    font-size: 20px;
 }
 
 footer a:hover {
     background-color: rgba(59, 59, 59, 0.7);
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-}
 
 .redes-sociais {
     display: flex;
@@ -195,37 +202,30 @@ footer a:hover {
     font-weight: bold;
 }
 
-.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
 
 .itens-final {
+    width: 100%; 
+    background-color: #738d7b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    
 }
 
 .itens-final ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
+    gap: 10px; 
 }
 
 .itens-final img {
     max-width: 230px;
     max-height: 30px;
     margin: 0 10px;
-}
-
-.logo-final {
-    width: 90%;
-}
-
-.insta,
-.whats {
-    display: inline-block;
 }
 
 @media (max-width: 768px){

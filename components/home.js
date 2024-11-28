@@ -14,12 +14,16 @@ export default function home() {
 
         <h1 id="digitacao">Quando você muda, o mundo muda</h1>
 
-        <div class="mini-borda-2">
-            <ul>
-                <li> MODA REGENERATIVA | BOLSAS CRIADAS COM RESÍDUOS TÊXTIL </li>
-            </ul>
-        </div>
         </header>
+
+        <section class="borda-mini">
+            <article class="mini-borda-2">
+                 <ul>
+                     <li> MODA REGENERATIVA | BOLSAS CRIADAS COM RESÍDUOS TÊXTIL </li>
+                </ul>
+            </article>
+        <section>
+
         <section class="mochila-texto">
             <div class="mochila">
                 <img src="imagens/mochila-principal.png">
@@ -31,7 +35,7 @@ export default function home() {
 
                 <p>A Cósmica Upcycle acredita que consumir de forma consciente transforma não apenas o mundo, mas também a nós mesmos. Cada peça que criamos carrega afeto, história e um compromisso com a sustentabilidade. Transformamos resíduos têxteis em bolsas únicas, provando que é possível unir beleza, funcionalidade e impacto positivo. Escolher a Cósmica é abraçar uma nova forma de enxergar o consumo: mais humana, generosa e abundante.
                 </p>
-                <a href="index.html" class="botao">SAIBA MAIS</a>
+                <a href="#home" class="botao">SAIBA MAIS</a>
 
             </div>
         </section>
@@ -54,7 +58,7 @@ export default function home() {
                 <h1>A MUDANÇA NO MUNDO</h1>
                 <p>Na Cósmica Cria, transformamos resíduos têxteis em bolsas que contam histórias e reduzem o desperdício. Nosso trabalho reflete um compromisso com o planeta, mostrando que escolhas conscientes podem gerar mudanças reais. Cada peça é uma ação contra a poluição da indústria têxtil, promovendo um ciclo mais sustentável. Ao consumir com propósito, ajudamos a construir um mundo mais generoso com as pessoas e com o meio ambiente..
                 </p>
-                <a href="pgimpacto.html" class="botao">SAIBA MAIS</a>
+                <a href="#impacto" class="botao">SAIBA MAIS</a>
             </div>
 
             <div class="calca">
@@ -99,11 +103,12 @@ export default function home() {
             </article>
         
             <article class="botao-container">
-                <a href="produtos.html" class="botao-produtos">SAIBA MAIS</a>
+                <a href="#produtos" class="botao-produtos">SAIBA MAIS</a>
             </article>
         </section>
 
         <section class="formulario-principal">
+    
 
             <h1 class="titulo-formulario">
                 FAÇA PARTE DA TRANSFORMAÇÃO
@@ -114,23 +119,23 @@ export default function home() {
             </h2>
 
             <form class="formulario">
-                <div class="input-form">
+                <article class="input-form">
                     <input class="envio-informacao" type="text" placeholder="Preencha seu nome" required>
                     <input class="envio-informacao" type="text" placeholder="Preencha seu email" required>
-                </div>
+                </article>
                 <button class="botao-envio" type="submit">Enviar</button>
             </form>
-
         </section>
+
 
         <section class="parte-final">
 
-            <div class="nosso-trabalho">
+            <article class="nosso-trabalho">
                 <h1 class="ultimo-titulo"> CONHEÇA<br>NOSSO TRABALHO</h1>
                 <h3 class="ultimo-subtitulo">@COSMICACRIA</h3>
-            </div>
+            </article>
 
-            <div class="imagens-nosso-trabalho">
+            <article class="imagens-nosso-trabalho">
 
                 <article class="imagem-trabalho1">
                     <a href="https://www.instagram.com/cosmicacria/" target="_blank"><img src="imagens/bolsa-preto-branco.JPEG"></a>
@@ -144,7 +149,7 @@ export default function home() {
                     <a href="https://www.instagram.com/cosmicacria/" target="_blank"><img src="imagens/bolsa_florida.JPEG"></a>
                 </article>
 
-            </div>
+            </article>
 
         </section>
 

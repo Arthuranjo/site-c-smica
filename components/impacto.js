@@ -38,14 +38,14 @@ export default function impacto() {
         </section>
 
         <section class="fazemos-juntos">
+
             <h1 class="mudanca">A MUDANÇA<br>QUE FAZEMOS JUNTOS!</h1>
 
             <p class="texto-mudanca">
                 A cada peça da Cósmica Upcyle, você contribui para um mundo com menos resíduos e mais significado. A indústria têxtil convencional polui, desperdiça e explora. Mas quando você opta por upcycling, está ajudando a reduzir esses danos e a promover a sustentabilidade. Pequenas mudanças, como a sua escolha de consumir de forma consciente, geram grandes transformações no planeta. Juntos, estamos moldando um futuro mais sustentável.
-
             </p>
-
         </section>
+
     `
     return impacto
 }

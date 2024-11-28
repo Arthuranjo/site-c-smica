@@ -156,22 +156,3 @@ document.addEventListener("DOMContentLoaded", function () {
     btnAntes.addEventListener("click", () => moverCarrossel("antes"));
 });
 
-// CARROSSEL PREÇOS
-
-const carrossel1 = document.querySelector('.carrossel');
-let index1 = 0;
-
-prev.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : carrossel.children.length - 1;
-    updateCarrossel();
-});
-
-next.addEventListener('click', () => {
-    index = (index + 1) % carrossel.children.length;
-    updateCarrossel();
-});
-
-function updateCarrossel() {
-    const width = carrossel.children[0].offsetWidth;
-    carrossel.style.transform = `translateX(-${index * width}px)`;
-}

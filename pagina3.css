@@ -92,11 +92,9 @@ section h1 {
     margin-bottom: 50px;
 }
 
-p {
-    font-size: 20px;
-}
 
 .mudanca-mundo {
+    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -114,6 +112,10 @@ p {
     width: 90%;
 }
 
+.texto-atitude p{
+    text-align: center;
+}
+
 .mochila-mudanca {
     flex: 0 0 auto;
 }
@@ -124,7 +126,7 @@ p {
 }
 
 .texto-atitude h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .texto-atitude p {
@@ -154,6 +156,7 @@ p {
 
 .fazemos-juntos {
     background-image: url('imagens/calca_jeans.jpg');
+    position: relative; 
     width: 100%;
     height: 400px;
     margin: 0;
@@ -161,23 +164,33 @@ p {
     margin-bottom: 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start; 
     padding-left: 100px;
+    overflow: hidden; 
 }
+
 
 .mudanca {
     color: #f4f4f4;
     margin-right: 290px;
+    z-index: 1; 
 }
 
 .texto-mudanca {
-    color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+    color: white;
     max-width: 600px;
+    z-index: 1; 
 }
+
 
 footer {
     background-color: #61806b;
-    padding: 20px;
-
+    padding: 20px 0;
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
 }
 
 footer p,
@@ -190,21 +203,13 @@ footer a {
     text-decoration: none;
     color: #f4f4f4;
     transition: background-color 0.3s ease, color 0.2s ease;
+    font-size: 20px;
 }
 
 footer a:hover {
     background-color: rgba(59, 59, 59, 0.7);
 }
 
-.footer-content {
-
-    display: flex;
-    flex-direction: column;
-}
-.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
 
 .redes-sociais {
     display: flex;
@@ -215,22 +220,24 @@ footer a:hover {
     font-weight: bold;
 }
 
-header.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
 
 .itens-final {
+    width: 100%; 
+    background-color: #738d7b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    
 }
 
 .itens-final ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
+    gap: 10px; 
 }
 
 .itens-final img {
@@ -238,16 +245,6 @@ header.borda-final {
     max-height: 30px;
     margin: 0 10px;
 }
-
-.logo-final {
-    width: 90%;
-}
-
-.insta,
-.whats {
-    display: inline-block;
-}
-
 @media (max-width: 768px){
     *{
         margin: 0;

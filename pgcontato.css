@@ -98,6 +98,11 @@ nav {
     margin: 5px;
 }
 
+
+#formu{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .formulario {
     background: #e3e6dd;
     padding: 20px;
@@ -195,7 +200,10 @@ ul.u {
 
 footer {
     background-color: #61806b;
-    padding: 20px;
+    padding: 20px 0;
+    width: 100%; 
+    box-sizing: border-box;
+    text-align: center;
 }
 
 footer p,
@@ -208,20 +216,14 @@ footer a {
     text-decoration: none;
     color: #f4f4f4;
     transition: background-color 0.3s ease, color 0.2s ease;
+    font-size: 20px;
 }
 
 footer a:hover {
     background-color: rgba(59, 59, 59, 0.7);
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-}
-.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
+
 .redes-sociais {
     display: flex;
     justify-content: space-evenly;
@@ -231,37 +233,30 @@ footer a:hover {
     font-weight: bold;
 }
 
-header.borda-final {
-    padding: 10px;
-    background-color: #738d7b;
-}
 
 .itens-final {
+    width: 100%; 
+    background-color: #738d7b;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    
 }
 
 .itens-final ul {
-    list-style-type: none;
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; 
+    gap: 10px; 
 }
 
 .itens-final img {
     max-width: 230px;
     max-height: 30px;
     margin: 0 10px;
-}
-
-.logo-final {
-    width: 90%;
-}
-
-.insta,
-.whats {
-    display: inline-block;
 }
 
 @media (max-width: 768px){
