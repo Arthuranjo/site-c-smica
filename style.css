@@ -75,6 +75,46 @@ body {
 .inicio li a:hover {
     background-color: #4c6e59;
 }
+
+
+@media screen and (max-width: 768px) {
+    .inicio {
+        background-color: #4c6e59;
+        flex-direction: column; 
+        justify-content: center; 
+    }
+
+    .inicio li {
+        padding: 10px 0; 
+    }
+
+    .inicio li img {
+        width: 80px; 
+    }
+
+    .inicio li a {
+        font-size: 18px; 
+        padding: 8px 10px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .inicio li {
+        padding: 8px 0; 
+    }
+
+    .inicio li a {
+        font-size: 16px; 
+        padding: 6px 8px; 
+    }
+
+    .inicio li img {
+        width: 60px; 
+    }
+}   
+
+
 nav {
     flex-direction: column;
     display: flex;

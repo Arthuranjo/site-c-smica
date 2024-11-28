@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    letter-spacing: 0.40em;
+    letter-spacing: 0.10em;
     animation: typing 3s steps(30, end) infinite, 
             blink-caret 0.5s step-end infinite;
     z-index: 100002;
@@ -85,6 +85,45 @@ body {
 .inicio li a:hover {
     background-color: #4c6e59;
 }
+
+
+@media screen and (max-width: 768px) {
+    .inicio {
+        background-color: #4c6e59;
+        flex-direction: column; 
+        justify-content: center; 
+    }
+
+    .inicio li {
+        padding: 10px 0; 
+    }
+
+    .inicio li img {
+        width: 80px; 
+    }
+
+    .inicio li a {
+        font-size: 18px; 
+        padding: 8px 10px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .inicio li {
+        padding: 8px 0; 
+    }
+
+    .inicio li a {
+        font-size: 16px; 
+        padding: 6px 8px; 
+    }
+
+    .inicio li img {
+        width: 60px; 
+    }
+}   
+
 
 #logocosmica {
     display: block;
@@ -404,7 +443,7 @@ body {
 
 
 .formulario-principal {
-    background-image: url('imagens/calca_jeans.jpg');
+     background-image: url('imagens/calca_jeans.jpg');
     position: relative; /* Para permitir que o conteúdo fique acima do vídeo */
     width: 100%;
     height: 300px;
